@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salary Calculator</title>
+    <script src="./vendors/jquery-3.2.1.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <h1>Enter Employee Info</h1>
+        
+        <div class=form>
+            <input class=input id=firstName type="text" placeholder="First Name">
+            <input class=input id=lastName type="text" placeholder="Last Name"> 
+            <input class=input id=idNum type="number" placeholder="ID Number">
+            <input class=input id=jobTitle type="text" placeholder="Job Title">
+            <input class=input id=annualSal type="number" placeholder="Annual Salary">
+            <button class='sendInfo'>Submit</button>
+            <h1>Total Employee Monthly Costs: $</h1>
+            <span class=sum>0</span>
+            <p class="alert"></p>       
+
+        </div>
+        
+        <div class=content>
+        
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  font-size: 20px;
+  background: #fff;
+  color: #848484;
+  font-weight: 300;
+}
+
+main {
+  width: 90%;
+  margin: 0px auto;
+  padding: 20px 0;
+}
+
+a {
+  color: #FCC72C;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {
+  text-decoration: none;
+  color: #FCC72C;
+}
+
+p, ul, ol {
+  font-size: 15px;
+  color: #5a5a5a;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5a5a5a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 30px 0;
+}
+
+input {
+  height: 15px;
+  line-height: 15px;
+  display: block;
+  margin: 15px 0px;
+}
+
+div h1 {
+  display: inline;
+  padding: 5px 25px;
+}
+
+button {
+  font-size: 28px;
+  color: #848484;
+  font-family: 'Roboto', sans-serif;
+  width: 131px;
+}
+
+.entry {
+  padding: 0px 0px;
+  border-bottom-style: solid;
+  border-color: #B4B1B1;
+  width: 33%;
+  /* margin: 0 auto; */
+  border-width: 1px;
+  
+
+}
+
+.content {
+  border-top-style: solid;
+  border-color: #848484;
+  border-width: 1px;
+}
+
+.form {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+:required:focus {
+  box-shadow: 0  0 3px rgba(255,0,0,0.5); 
+}
+
+.alert {
+  height: 25px;
+  margin: 15px 0;
+}
