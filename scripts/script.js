@@ -38,15 +38,15 @@ function createEntry (firstIn, lastIn, idIn, titleIn, salIN) {
     this.monthlyCost = (salIN/12);
     company.push(this); // add employee object into the array
 
-    var $contents = $('<div>', {class: 'entry'});
-    $contents.append($('<span>', {class: this.monthlyCost})); // add class in the form of the monthly cost
+    var $contents = ($('<div>', {class: 'entry'}));
+    $contents.append($('<span>', {class: Math.round(this.monthlyCost)})); // add class in the form of the monthly cost
     $contents.append($('<p>', {text: 'Name: '+this.firstname+" "+ this.lastname}));
     $contents.append($('<p>', {text: 'Title: '+this.jobtitle}));
     $contents.append($('<p>', {text: 'Employee ID: '+this.idnumber, id: 'id-'+this.idnumber}));
     $contents.append($('<p>', {text: 'Annual Payroll Cost: ' + Math.round(this.annualsalary), class: 'payCost' } ) );
     $contents.append('<i class="fa fa-trash"></i>'); // add delete button font-awesome icon
 
-    $('.content').append($contents); // add new Div for new employee
+    $('.content').append($contents).data('index', company.length); // add new Div for new employee
     sum = parseInt($('.sum').text()); // get current value off the DOM
     sum += parseInt(this.monthlyCost); // increase variable based on new employee added
     $('.sum').text(sum);  // post total cost variable to the DOM
